@@ -1,4 +1,4 @@
-/*
+
 class Node{
   int data;
   Node next;
@@ -16,13 +16,13 @@ class Node{
     this.next = null;
   }
 }
-*/
+
 
 class Solution{
     public int nthNode(Node head,int n){
       //write your code here.
       if (head==null){
-          return head.data;
+          return -1;
       }
       Node p=head;
       Node q=head;
@@ -30,7 +30,7 @@ class Solution{
           p=p.next;
       }
       if (p==null){
-          return p.data;
+          return -1;
       }
       else{
       while(p.next!=null){

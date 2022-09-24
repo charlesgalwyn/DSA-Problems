@@ -1,4 +1,4 @@
-/*
+
 class Node{
   int data;
   Node next;
@@ -16,7 +16,7 @@ class Node{
     this.next = null;
   }
 }
-*/
+
 class Solution{
     public static Node addAtHead(Node a,int data){
       //write your code here.

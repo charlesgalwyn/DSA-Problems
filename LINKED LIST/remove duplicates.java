@@ -1,4 +1,4 @@
-/*
+
 class Node{
   int data;
   Node next;
@@ -15,7 +15,7 @@ class Node{
     this.next = null;
   }
 }
-*/
+
 class Solution{
     public Node removeDuplicates(Node a){
       Node curr=a;

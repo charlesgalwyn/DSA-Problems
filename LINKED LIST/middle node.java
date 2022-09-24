@@ -1,4 +1,3 @@
-/*
 class Node{
 	int data;
 	Node next;
@@ -16,13 +15,13 @@ class Node{
 		this.next = null;
 	}
 }
-*/
+
 
 class Solution{
     public int middleNode(Node head){
       //write your code here.
       if (head==null){
-          return head.data;
+          return -1;
       }
       Node slow=head;
       Node fast=head;
