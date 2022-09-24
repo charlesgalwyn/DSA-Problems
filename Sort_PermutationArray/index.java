@@ -1,23 +1,41 @@
-import java.lang.*;
-import java.io.*;
 import java.util.*;
-
-
 class Main{
-	//This function prints the elements according to the condition mentioned in the question.
-	public static void fizzBuzz(int n){
-		for (int i=1;i<=n;i++){
-			if (i % 3 == 0 && i % 5 == 0) System.out.print("FizzBuzz" + " ");
-			else if (i % 3 == 0) System.out.print("Fizz" + " ");
-			else if (i % 5 == 0) System.out.print("Buzz" + " ");
-			else{
-				System.out.print(i + " ");
-			}
-		}
-	}
-	//Main Function
-	public static void main(String[] args){
-		int n = 10;
-		fizzBuzz(n);
-	}
+    static int count1=0;
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int t=sc.nextInt();
+        for (int h=0;h<t;h++){
+            int n=sc.nextInt();
+            int []arr=new int[n];
+            for (int k=0;k<n;k++){
+                arr[k]=sc.nextInt();
+            }
+            
+            if(sorted(arr,n)==1){
+                System.out.println(0);
+            }
+            else{
+            
+            if (arr[0]==1 || arr[n-1]==n){
+                System.out.println(1);
+            }
+            else if (arr[0]==n && arr[n-1]==1){
+                System.out.println(3);
+            }
+            else {
+                System.out.println(2);
+            }
+        } 
+        }
+    }
+    public static int sorted(int[]arr,int n){
+        if (n==1 || n==0){
+            return 1;
+        }
+        if (arr[n - 1] < arr[n - 2]){
+            return 0;
+        }
+        return sorted(arr,n-1);
+    }
 }
