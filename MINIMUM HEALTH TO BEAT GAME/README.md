@@ -1,3 +1,5 @@
+![GitHub last commit](https://img.shields.io/github/last-commit/charlesgalwyn/DSA-Problems?style=for-the-badge)
+## PROBLEM STATEMENT
 You are playing a game that has n levels numbered from 0 to n - 1. You are given a 0-indexed integer array damage where damage[i] is the amount of health you will lose to complete the ith level.
 
 You are also given an integer armor. You may use your armor ability at most once during the game on any level which will protect you from at most armor damage.
@@ -6,6 +8,7 @@ You must complete the levels in order and your health must be greater than 0 at 
 
 Return the minimum health you need to start with to beat the game.
 
+ ```bash
 Example 1:
 
 Input: damage = [2,7,4,3], armor = 4
@@ -35,7 +38,7 @@ On round 1, take 3 damage. You have 10 - 3 = 7 health.
 On round 2, take 3 damage. You have 7 - 3 = 4 health.
 On round 3, take 3 damage. You have 4 - 3 = 1 health.
 Note that you did not use your armor ability.
-
+```
 Solution 1. DP
 Let yes be the min health needed if we do use armor once.
 
