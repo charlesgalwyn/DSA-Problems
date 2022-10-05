@@ -2,7 +2,7 @@ import java.util.*;
 class Main{
     public static void main(String [] args){
             int n=5;
-            long k=3;
+            long k=4;
             long arr[]=new long[]{1,2,1,3,4};
              boolean flag=false;
             long sum=0,value=0;
